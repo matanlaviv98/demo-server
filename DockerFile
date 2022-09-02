@@ -2,4 +2,5 @@ FROM python:3.8.2-alpine
 ADD . MYAPP
 WORKDIR /MYAPP
 COPY . .
-CMD ["python", "main:app"]
+EXPOSE 8001
+CMD ["python", "main.py"]
